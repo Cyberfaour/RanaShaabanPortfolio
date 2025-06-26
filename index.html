@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rana Shaaban • Professional Translator & Editor</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Rana Shaaban: Expert Translator and Editor in Beirut, Lebanon. Specializing in English-Arabic translation, subtitling, proofreading, and technical documentation for diverse industries." />
+    <meta name="keywords" content="Rana Shaaban, translator, editor, subtitler, English to Arabic, Arabic to English, proofreading, technical documentation, localization, content translation, Beirut, Lebanon, Poliscript, freelance translator" />
+    <meta name="author" content="Rana Shaaban" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="YOUR_WEBSITE_URL_HERE" /> <!-- Replace with your actual website URL -->
+    <meta property="og:title" content="Rana Shaaban • Professional Translator & Editor" />
+    <meta property="og:description" content="Rana Shaaban: Expert Translator and Editor in Beirut, Lebanon. Specializing in English-Arabic translation, subtitling, proofreading, and technical documentation for diverse industries." />
+    <meta property="og:image" content="https://placehold.co/1200x630/ff6b6b/ffffff?text=Rana+Shaaban+Portfolio" /> <!-- Placeholder, replace with your actual profile image or a relevant graphic -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://placehold.co/32x32/ff6b6b/ffffff?text=RS" type="image/png"> <!-- Simple text favicon, replace with a custom one -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <style>
+        :root {
+            --accent: #ff6b6b; /* Red-pink accent */
+            --dark-bg: #1b1b1f; /* Dark background for some sections/elements */
+            --light-bg: #f9f9fb; /* Light background for primary sections */
+            --text-dark: #333; /* Dark text for light backgrounds */
+            --text-light: #f5f5f5; /* Light text for dark backgrounds */
+            --secondary-text-light: #6c757d; /* Lighter grey for secondary text on light bg */
+            --secondary-text-dark: #a3a3a3; /* Lighter grey for secondary text on dark bg */
+            --border-light: rgba(0, 0, 0, 0.1); /* Light border for light backgrounds */
+            --border-dark: rgba(255, 255, 255, 0.08); /* Dark border for dark backgrounds */
+        }
+
+        /* Base styles */
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--light-bg);
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border-light);
+        }
+        .navbar-brand { font-weight: 700; letter-spacing: 0.5px; color: var(--text-dark); }
+        .nav-link { color: var(--secondary-text-light)!important; font-weight: 500; }
+        .nav-link:hover, .nav-link.active { color: var(--accent)!important; }
+        .navbar-toggler { border-color: var(--border-light); }
+        .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+
+        /* Hero Section */
+        #hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--text-dark);
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--light-bg) 0%, rgba(255, 240, 240, 0.8) 100%);
+        }
+        /* Background pattern for hero */
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23c2c2c2" fill-opacity="0.1" fill-rule="evenodd"%3E%3Cpath d="M0 60V0h60v60H0zm.075 0V.075h59.85V60H.075zM2.146 58.075h55.707V2.146H2.146v55.929zM4.22 56.075h51.56V4.22H4.22v51.855zM6.29 54.075h47.42V6.29H6.29v47.785zM8.36 52.075h43.28V8.36H8.36v43.715zM10.43 50.075h39.14V10.43h-39.14v39.645zM12.5 48.075h35V12.5h-35v35.575zM14.57 46.075h30.86V14.57h-30.86v31.505zM16.64 44.075h26.72V16.64h-26.72v27.435zM18.71 42.075h22.58V18.71h-22.58v23.365zM20.78 40.075h18.44V20.78h-18.44v19.295zM22.85 38.075h14.3V22.85h-14.3v15.225zM24.92 36.075h10.16V24.92h-10.16v11.155zM26.99 34.075h6.02V26.99h-6.02v7.085zM29.06 32.075h1.88V29.06h-1.88v3.015z"%3E%3C/path%3E%3C/g%3E%3C/svg%3E');
+            background-size: 60px 60px; /* Size of the SVG pattern */
+            opacity: 0.2; /* Adjust opacity for subtlety */
+            z-index: 0;
+            pointer-events: none; /* Allow clicks to pass through */
+        }
+        #hero .container {
+            position: relative;
+            z-index: 1; /* Ensure content is above the pattern */
+        }
+
+        #hero h1 { font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 700; line-height: 1.1; }
+        #hero .accent { color: var(--accent); }
+        #hero .lead { max-width: 720px; margin: 1.5rem auto; color: var(--text-dark); font-size: 1.2rem; }
+        #hero .btn {
+            border-radius: 50px; /* Pill-shaped buttons */
+            padding: 0.8rem 2.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        #hero .btn-light { background-color: white; color: var(--dark-bg); border-color: white; }
+        #hero .btn-outline-light { border-color: var(--dark-bg); color: var(--text-dark); }
+        #hero .btn-outline-light:hover { background-color: var(--dark-bg); color: white; }
+        #hero .btn-dark { background-color: var(--accent); color: white; border-color: var(--accent); }
+        #hero .btn-dark:hover { background-color: #e05e5e; border-color: #e05e5e; }
+
+
+        /* Sections */
+        section { padding: 6rem 0; position: relative; }
+        .section-heading {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2.5rem;
+            position: relative;
+            display: inline-block;
+            color: var(--text-dark);
+        }
+        .section-heading::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        #about { background: var(--light-bg); color: var(--text-dark); }
+        #about p { color: var(--secondary-text-light); }
+        .skill-chip {
+            display: inline-block;
+            padding: .45rem 1.1rem;
+            margin: .35rem;
+            background: var(--dark-bg);
+            color: var(--text-light);
+            border: 1px solid var(--border-dark);
+            border-radius: 20px;
+            font-size: .85rem;
+            font-family: 'Roboto Mono', monospace;
+            transition: transform .3s ease, border-color .3s ease, background-color .3s ease;
+        }
+        .skill-chip:hover { border-color: var(--accent); transform: translateY(-4px); background-color: #333;}
+
+
+        /* Experience (Timeline) */
+        #experience { background: var(--dark-bg); color: var(--text-light); }
+        #experience .section-heading { color: var(--text-light); }
+        #experience .timeline {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px solid var(--accent);
+        }
+        #experience .timeline-item { margin-bottom: 2.5rem; }
+        #experience .timeline-item:last-child { margin-bottom: 0; }
+        #experience .timeline-item:before {
+            content: "";
+            position: absolute;
+            left: -9px; top: 4px;
+            width: 14px; height: 14px;
+            background: var(--dark-bg);
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+        }
+        #experience .timeline-item h4 { margin-bottom: .25rem; font-weight: 600; color: var(--text-light); }
+        #experience .timeline-item span { color: var(--secondary-text-dark); font-size: .9rem; }
+        #experience .timeline-item ul { color: var(--secondary-text-dark); list-style: disc; margin-left: 1.25rem;} /* Ensure list styles are visible */
+        #experience .timeline-item li { margin-bottom: 0.5rem; }
+
+
+        /* Services Section */
+        #services { background: var(--light-bg); color: var(--text-dark); }
+        #services .service-item {
+            background: #fff;
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+        #services .service-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        #services .service-item i {
+            font-size: 2.8rem;
+            color: var(--accent);
+            margin-bottom: 1.2rem;
+            transition: transform 0.3s;
+        }
+        #services .service-item:hover i {
+            transform: scale(1.1);
+        }
+        #services .service-item h5 {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.75rem;
+        }
+        #services .service-item p {
+            color: var(--secondary-text-light);
+            font-size: 0.95rem;
+        }
+
+
+        /* Education */
+        #education { background: var(--light-bg); }
+        #education .p-4 {
+            background: #fff;
+            border: 1px solid var(--border-light);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+        #education .p-4:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        #education h5 { color: var(--text-dark); }
+        #education p { color: var(--secondary-text-light); }
+
+        /* Contact */
+        #contact { background: var(--dark-bg); color: var(--text-light); }
+        #contact .section-heading { color: var(--text-light); }
+        #contact .contact-info-card {
+            background: var(--dark-bg)!important; /* Keep contact info card dark */
+            border: 1px solid var(--border-dark);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 2rem; /* Add padding for consistency */
+            border-radius: 12px;
+        }
+        #contact .contact-info-card p, #contact .contact-info-card a {
+            color: var(--text-light)!important;
+        }
+        #contact .contact-info-card i {
+            color: var(--secondary-text-dark)!important; /* Adjust icon color in info card */
+        }
+        #contact .form-container {
+            background: var(--dark-bg); /* Ensure form background matches section */
+            border: 1px solid var(--border-dark);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 2rem; /* Add padding for consistency */
+            border-radius: 12px;
+        }
+        #contact .form-control {
+            background: var(--bg-1); /* Slightly darker input field background */
+            border: 1px solid var(--border-dark);
+            color: var(--text-light);
+            padding: 0.75rem 1rem;
+        }
+        #contact .form-control::placeholder { /* Placeholder text color */
+            color: var(--secondary-text-dark);
+        }
+        #contact .form-control:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 .25rem rgba(255,107,107,.25); /* Focus ring with accent */
+            background: var(--bg-1);
+            color: var(--text-light);
+        }
+        #contact label { color: var(--text-light); margin-bottom: 0.5rem;}
+        #contact .btn-dark {
+            background-color: var(--accent);
+            border-color: var(--accent);
+            color: white;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        #contact .btn-dark:hover {
+            background-color: #e05e5e; /* Darken on hover */
+            border-color: #e05e5e;
+        }
+        #formStatusMessage {
+            font-weight: 500;
+        }
+        .text-success { color: #28a745 !important; }
+        .text-danger { color: #dc3545 !important; }
+
+
+        /* Footer */
+        footer {
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid var(--border-dark);
+            background: var(--dark-bg);
+            color: var(--secondary-text-dark);
+        }
+        footer a { margin: 0 .85rem; color: var(--secondary-text-dark); transition: color 0.2s; }
+        footer a:hover { color: var(--text-light); }
+        footer a i.fs-4 { font-size: 1.5rem !important; } /* Adjust icon size */
+
+        /* Back to Top Button */
+        #backToTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: var(--accent);
+            color: white;
+            cursor: pointer;
+            padding: 12px 15px; /* Slightly smaller padding */
+            border-radius: 50%; /* Fully round button */
+            font-size: 1.2rem; /* Icon size */
+            opacity: 0.9;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: background-color 0.3s, opacity 0.3s;
+        }
+        #backToTopBtn:hover {
+            background-color: #e05e5e;
+            opacity: 1;
+        }
+
+        /* Schema.org for structured data (hidden visually) */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navMenu">
+
+    <!-- Schema.org Person Markup -->
+    <div itemscope itemtype="http://schema.org/Person" class="sr-only">
+        <span itemprop="name">Rana Shaaban</span>
+        <link itemprop="url" href="YOUR_WEBSITE_URL_HERE" /> <!-- Replace with your actual website URL -->
+        <span itemprop="jobTitle">Professional Translator & Editor</span>
+        <span itemprop="email">rana.shaaban.businessmail@gmail.com</span>
+        <span itemprop="telephone">+961 76 074504</span>
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="addressLocality">Beirut</span>,
+            <span itemprop="addressRegion">Lebanon</span>
+        </div>
+        <link itemprop="sameAs" href="https://www.linkedin.com/in/rana-shaaban-linkedin-profile/" /> <!-- Replace with Rana's actual LinkedIn URL -->
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">Rana Shaaban</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="hero">
+        <div class="container" data-aos="fade-up">
+            <h1>Bridging <span class="accent">Languages</span>. Cultivating <span class="accent">Clarity</span>.</h1>
+            <p class="lead">I'm Rana Shaaban, a dedicated Translator and Editor crafting precise, culturally sensitive, and impactful content for a global audience.</p>
+            <div class="mt-5 d-flex flex-wrap justify-content-center gap-3">
+                <a href="https://www.linkedin.com/in/rana-shaaban-linkedin-profile/" target="_blank" class="btn btn-dark fw-semibold"><i class="fab fa-linkedin me-2"></i>LinkedIn</a>
+                <a href="Rana_Shaaban_Resume.pdf" target="_blank" class="btn btn-outline-light text-dark"><i class="fas fa-file-alt me-2"></i>Download CV</a>
+                <a href="mailto:rana.shaaban.businessmail@gmail.com" class="btn btn-dark fw-semibold"><i class="fas fa-envelope me-2"></i>Email Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">About Me</h2>
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+                    <p class="fs-5">With a Bachelor of Arts in Linguistics and Translation and a background in English Literature, I bring a profound understanding of language nuances to every project. My passion lies in ensuring seamless communication across cultural divides, delivering content that resonates with target audiences.</p>
+                    <p>From orchestrating subtitling projects for global media giants like National Geographic and Disney, to refining complex technical documentation, I am committed to precision and clarity. My experience also extends to freelance editing, where I transform academic papers and marketing materials into compelling narratives. I'm adept with tools like Poliscript, FABsubtitler, and Omega Software, ensuring efficient and high-quality deliverables.</p>
+                    <p>Beyond translation, my diverse professional journey has honed my attention to detail, project coordination skills, and a strong client-focused approach, making me a reliable partner for your linguistic needs.</p>
+                </div>
+                <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+                    <h3 class="h5 mb-3">Key Competencies & Tools</h3>
+                    <div>
+                        <span class="skill-chip">English-Arabic Translation</span>
+                        <span class="skill-chip">Subtitling & Localization</span>
+                        <span class="skill-chip">Proofreading & Editing</span>
+                        <span class="skill-chip">Technical Documentation</span>
+                        <span class="skill-chip">Cultural Sensitivity</span>
+                        <span class="skill-chip">Poliscript Software</span>
+                        <span class="skill-chip">FABsubtitler</span>
+                        <span class="skill-chip">Omega Software</span>
+                        <span class="skill-chip">Microsoft 365 Suite</span>
+                        <span class="skill-chip">Google Docs/Sheets</span>
+                        <span class="skill-chip">Quality Assurance</span>
+                        <span class="skill-chip">Project Coordination</span>
+                        <span class="skill-chip">Bilingual Communication</span>
+                        <span class="skill-chip">Invoice Processing</span>
+                        <span class="skill-chip">Data Analysis</span>
+                        <span class="skill-chip">Agile & Waterfall</span>
+                        <span class="skill-chip">HSE Management</span>
+                        <span class="skill-chip">Risk Assessment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience (Consolidated and Reordered) -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">Professional Experience</h2>
+            <div class="timeline" data-aos="fade-up" data-aos-delay="100">
+                <!-- Image Production House (IPH) - Translator and Subtitler (Aug 2022 – Present) -->
+                <div class="timeline-item">
+                    <h4>Translator and Subtitler — Image Production House (IPH)</h4>
+                    <span class="d-block mb-2">Aug 2022 – Present • Beirut, Lebanon</span>
+                    <ul class="text-secondary mb-0">
+                        <li>Translated scripts, dialogues, and documents from English to Arabic and vice versa, ensuring cultural accuracy and relevance. Tailored content to target audiences, enhancing accessibility.</li>
+                        <li>Managed the creation and synchronization of subtitles for films, TV shows, documentaries, and commercials using Poliscript software ensuring timing and readability standards for optimal viewer comprehension.</li>
+                        <li>Collaborated effectively with directors, editors, and production teams to understand project requirements and deliver precise translations. Provided timely updates and addressed any concerns during the subtitling process.</li>
+                        <li>Developed advanced proficiency in Poliscript subtitling software, becoming a subject matter expert within the team. Utilized Poliscript to its full potential for subtitle creation, synchronization, and formatting.</li>
+                        <li>Managed multiple subtitling projects simultaneously, ensuring deadlines were met without compromising quality. Coordinated with other departments to streamline the translation and subtitling workflow.</li>
+                        <li>Translated and subtitled projects received from leading media and entertainment companies, including National Geographic, OSN, Discovery Channel, Shahid, MBC, Warner Bros, Disney, Cartoon Network, BeIN and more.</li>
+                        <li>Actively participated in training new translators and subtitlers. Shared expertise in Poliscript usage and subtitling best practices. Mentored 5 junior team members, resulting in an increase in their productivity. Conducted monthly workshops to foster skill development within the team.</li>
+                    </ul>
+                </div>
+
+                <!-- Fitness Zone - Hamra Branch - Membership Consultant (Aug 2022 – Present) -->
+                <div class="timeline-item">
+                    <h4>Membership Consultant — Fitness Zone - Hamra Branch</h4>
+                    <span class="d-block mb-2">Aug 2022 – Present • Beirut, Lebanon</span>
+                    <ul class="text-secondary mb-0">
+                        <li>Consistently exceeded monthly membership targets enrolling 55-65 new members per month.</li>
+                        <li>Sustained a tour-to-join conversion rate through goal-focused club tours and proactive objection handling.</li>
+                        <li>Grew referral lead volume quarter-over-quarter by launching and nurturing a "Bring-a-Friend" initiative.</li>
+                        <li>Cross-sold personal-training packages and retail items annually via needs-based consultations.</li>
+                        <li>Maintained compliance with day-1/7/30 follow-up cadences using CRM automation, preventing prospect drop-off.</li>
+                        <li>Mentored two junior consultants on consultative selling; both reached full quota within their first 60 days.</li>
+                    </ul>
+                </div>
+
+                <!-- Obi Sushi - Operations Supervisor (Aug 2022 – Present) -->
+                <div class="timeline-item">
+                    <h4>Operations Supervisor — Obi Sushi</h4>
+                    <span class="d-block mb-2">Aug 2022 – Present • Beirut, Lebanon</span>
+                    <ul class="text-secondary mb-0">
+                        <li>Developed and managed staff schedules to ensure adequate coverage during peak hours and special events.</li>
+                        <li>Conducted regular performance evaluations, provided constructive feedback, and implemented training programs to enhance staff skills and productivity.</li>
+                        <li>Maintained high standards of customer service, ensuring a memorable dining experience for all guests.</li>
+                        <li>Efficiently handled customer complaints and resolved issues to ensure customer satisfaction.</li>
+                        <li>Managed reservation systems and optimized seating arrangements to maximize customer flow and minimize wait times.</li>
+                        <li>Prepared and presented detailed reports on sales, customer feedback, staff performance, and operational efficiency to senior management.</li>
+                        <li>Attended and conducted regular team meetings to communicate goals, updates, and address any issues or concerns.</li>
+                    </ul>
+                </div>
+
+                <!-- Self-Employed (Contractor - Freelance Editor and Translator) (Aug 2020 – April 2021) -->
+                <div class="timeline-item">
+                    <h4>Contractor - Freelance Editor and Translator — Self-Employed</h4>
+                    <span class="d-block mb-2">Aug 2020 – April 2021 • Beirut, Lebanon</span>
+                    <ul class="text-secondary mb-0">
+                        <li>Edited and refined documents to improve clarity and readability, including academic papers, reports, and marketing materials.</li>
+                        <li>Created clear and accurate technical documentation and user manuals, translating complex concepts into easy-to-understand language.</li>
+                        <li>Performed proofreading and quality assurance to correct spelling, grammar, and typographical errors.</li>
+                        <li>Provided precise translation services for various content types, ensuring cultural sensitivity and accuracy.</li>
+                    </ul>
+                </div>
+
+                <!-- Fitness Zone - DALFA Branch - Front of House (Aug 2020 – April 2021) -->
+                <div class="timeline-item">
+                    <h4>Front of House — Fitness Zone - DALFA Branch</h4>
+                    <span class="d-block mb-2">Aug 2020 – April 2021 • Beirut, Lebanon</span>
+                    <ul class="text-secondary mb-0">
+                        <li>Assisted in daily operations of the gym, ensuring a clean, safe, and welcoming environment for members.</li>
+                        <li>Provided excellent customer service by addressing member inquiries, concerns, and feedback promptly.</li>
+                        <li>Supported sales initiatives by promoting memberships, personal training packages, and special offers.</li>
+                        <li>Helped manage front desk operations including check-ins, new member onboarding, and facility tours.</li>
+                        <li>Supervised and coordinated staff schedules, ensuring proper coverage and smooth workflow.</li>
+                        <li>Monitored equipment functionality and arranged timely maintenance and repairs.</li>
+                        <li>Maintained accurate records of memberships, waivers, inventory, and staff attendance.</li>
+                        <li>Assisted in planning and executing gym events, marketing campaigns, and promotional activities.</li>
+                        <li>Collaborated with the gym manager to meet monthly membership and retention goals.</li>
+                    </ul>
+                </div>
+
+                <!-- Gray McKenzie Warehouse - Quality Control Specialist (July 2019 – Jan 2022) -->
+                <div class="timeline-item">
+                    <h4>Quality Control Specialist — Gray McKenzie Warehouse</h4>
+                    <span class="d-block mb-2">July 2019 – Jan 2022 • Beirut, Lebanon</span>
+                    <ul class="text-secondary mb-0">
+                        <li>Conducted detailed inspections and quality assessments of products to ensure compliance with company standards and industry regulations.</li>
+                        <li>Reviewed and translated quality control documentation between English and Arabic, ensuring accuracy and clarity for effective communication across multilingual teams.</li>
+                        <li>Analyzed quality control reports to identify trends and areas for improvement, providing actionable feedback and recommendations to enhance product quality and process efficiency.</li>
+                        <li>Provided training on quality control procedures and tools, creating and presenting bilingual materials to ensure comprehensive team understanding.</li>
+                        <li>Ensured compliance with industry regulations and standards, staying updated on regulatory changes and integrating them into quality control practices.</li>
+                        <li>Performed data entry tasks related to quality control, including inputting inspection results, tracking defects, and updating records to maintain accurate and comprehensive data.</li>
+                    </ul>
+                </div>
+
+                <!-- Al Yonbouh Elementary School - Full Time- Elementary English Teacher (July 2019 – Jan 2022) -->
+                <div class="timeline-item">
+                    <h4>Full Time- Elementary English Teacher — Al Yonbouh Elementary School</h4>
+                    <span class="d-block mb-2">July 2019 – Jan 2022 • Beirut, Lebanon</span>
+                    <ul class="text-secondary mb-0">
+                        <li>Developed and taught engaging English lessons focused on phonics, vocabulary, grammar, reading, and writing.</li>
+                        <li>Created a supportive and collaborative classroom environment to encourage student participation and confidence.</li>
+                        <li>Adapted instruction to meet diverse student needs and learning styles, providing extra support as needed.</li>
+                        <li>Assessed student progress through various methods and provided feedback to students and parents.</li>
+                        <li>Participated in professional development to stay updated on best practices in teaching and literacy.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-heading text-center" data-aos="fade-up">My Services</h2>
+            <p class="text-secondary fs-5 text-center mx-auto mb-5" style="max-width: 700px;" data-aos="fade-up" data-aos-delay="100">Offering a comprehensive suite of linguistic services designed to ensure your message is clear, accurate, and culturally appropriate for any audience.</p>
+            <div class="row text-center gy-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="service-item">
+                        <i class="fas fa-language"></i>
+                        <h5>Document Translation</h5>
+                        <p class="text-secondary">Accurate and culturally nuanced translation of various document types, including academic papers, reports, marketing materials, and general content between English and Arabic.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="service-item">
+                        <i class="fas fa-closed-captioning"></i>
+                        <h5>Subtitling & Localization</h5>
+                        <p class="text-secondary">Creation and synchronization of subtitles for films, TV shows, documentaries, and commercials, ensuring timing, readability, and cultural relevance for diverse media platforms.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="service-item">
+                        <i class="fas fa-spell-check"></i>
+                        <h5>Proofreading & Editing</h5>
+                        <p class="text-secondary">Thorough review and refinement of texts to improve clarity, readability, grammar, spelling, and overall quality, ensuring error-free and polished final content.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="450">
+                    <div class="service-item">
+                        <i class="fas fa-file-invoice"></i>
+                        <h5>Technical Documentation</h5>
+                        <p class="text-secondary">Translating complex technical concepts into clear, accurate, and easy-to-understand language for user manuals, reports, and other specialized documents, often bilingual.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="550">
+                    <div class="service-item">
+                        <i class="fas fa-handshake"></i>
+                        <h5>Consultation & Training</h5>
+                        <p class="text-secondary">Providing expertise and guidance on translation best practices, linguistic challenges, and training for junior translators and subtitlers to enhance team productivity.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="650">
+                    <div class="service-item">
+                        <i class="fas fa-globe"></i>
+                        <h5>Cultural Adaptation</h5>
+                        <p class="text-secondary">Ensuring content is not just translated, but thoughtfully adapted to resonate with the cultural nuances and sensitivities of the target audience, enhancing engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-heading" data-aos="fade-up">Education</h2>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+                        <h5 class="fw-semibold mb-1">Bachelor of Arts, Linguistics and Translation</h5>
+                        <p class="mb-0 text-secondary">American University of Culture and Education · GPA 3.5 · Aug 2022 – Present</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+                        <h5 class="fw-semibold mb-1">Bachelor of Education, English Literature</h5>
+                        <p class="mb-0 text-secondary">Lebanese University · GPA 3.7 · July 2019 – Jan 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-heading text-center" data-aos="fade-up">Let’s Connect</h2>
+            <p class="text-secondary fs-5 text-center mx-auto" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="100">Ready to discuss your translation or editing project? Drop me a message—I aim to reply within 24 hours.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                    <form action="https://formspree.io/f/yourformid" method="POST" class="row g-4 needs-validation form-container" novalidate>
+                        <div class="col-md-6"><label for="name" class="form-label">Name</label><input type="text" class="form-control" id="name" name="name" required /><div class="invalid-feedback">Please enter your name.</div></div>
+                        <div class="col-md-6"><label for="email" class="form-label">Email</label><input type="email" class="form-control" id="email" name="email" required /><div class="invalid-feedback">Please enter a valid email address.</div></div>
+                        <div class="col-12"><label for="subject" class="form-label">Subject</label><input type="text" class="form-control" id="subject" name="_subject" required /><div class="invalid-feedback">Please enter a subject.</div></div>
+                        <div class="col-12"><label for="message" class="form-label">Message</label><textarea class="form-control" id="message" name="message" rows="6" required></textarea><div class="invalid-feedback">Please enter your message.</div></div>
+                        <div class="col-12 text-center mt-4">
+                            <button class="btn btn-dark px-4" type="submit"><i class="fas fa-paper-plane me-2"></i>Send Message</button>
+                            <!-- Form submission success/error message -->
+                            <div id="formStatusMessage" class="mt-3"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="mb-3">
+                <a href="https://www.linkedin.com/in/rana-shaaban-linkedin-profile/" target="_blank"><i class="fab fa-linkedin fs-4"></i></a>
+                <a href="mailto:rana.shaaban.businessmail@gmail.com"><i class="fas fa-envelope fs-4"></i></a>
+                <a href="https://wa.me/96176074504" target="_blank"><i class="fab fa-whatsapp fs-4"></i></a>
+            </div>
+            <p class="small mb-0">© <span id="currentYear"></span> Rana Shaaban • Beirut, Lebanon</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "name": "Rana Shaaban",
+          "jobTitle": "Professional Translator & Editor",
+          "url": "YOUR_WEBSITE_URL_HERE",
+          "email": "rana.shaaban.businessmail@gmail.com",
+          "telephone": "+961 76 074504",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Beirut",
+            "addressRegion": "Lebanon"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/rana-shaaban-linkedin-profile/" <!-- Replace with Rana's actual LinkedIn URL -->
+          ],
+          "knowsLanguage": ["en", "ar"]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "Service",
+              "name": "Document Translation",
+              "description": "Accurate and culturally nuanced translation of various document types, including academic papers, reports, marketing materials, and general content between English and Arabic."
+            },
+            {
+              "@type": "Service",
+              "name": "Subtitling & Localization",
+              "description": "Creation and synchronization of subtitles for films, TV shows, documentaries, and commercials, ensuring timing, readability, and cultural relevance for diverse media platforms."
+            },
+            {
+              "@type": "Service",
+              "name": "Proofreading & Editing",
+              "description": "Thorough review and refinement of texts to improve clarity, readability, grammar, spelling, and overall quality, ensuring error-free and polished final content."
+            },
+            {
+              "@type": "Service",
+              "name": "Technical Documentation Translation",
+              "description": "Translating complex technical concepts into clear, accurate, and easy-to-understand language for user manuals, reports, and other specialized documents, often bilingual."
+            },
+            {
+              "@type": "Service",
+              "name": "Linguistic Consultation & Training",
+              "description": "Providing expertise and guidance on translation best practices, linguistic challenges, and training for junior translators and subtitlers to enhance team productivity."
+            },
+            {
+              "@type": "Service",
+              "name": "Cultural Adaptation",
+              "description": "Ensuring content is not just translated, but thoughtfully adapted to resonate with the cultural nuances and sensitivities of the target audience, enhancing engagement."
+            }
+          ]
+        }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({ duration: 700, once: true, offset: 50 });
+
+            // Back to Top Button script
+            const backToTopBtn = document.getElementById("backToTopBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    backToTopBtn.style.display = "block";
+                } else {
+                    backToTopBtn.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+
+            // Make the topFunction accessible globally
+            window.topFunction = topFunction; // Expose to global scope for onclick
+
+            // Set current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // Handle form validation and submission
+            const contactForm = document.querySelector('#contact form');
+            const formStatusMessage = document.getElementById('formStatusMessage');
+
+            contactForm.addEventListener('submit', async function(event) {
+                event.preventDefault();
+                event.stopPropagation(); // Prevent default HTML form submission
+
+                if (!contactForm.checkValidity()) {
+                    contactForm.classList.add('was-validated');
+                    formStatusMessage.textContent = ''; // Clear previous messages
+                    return;
+                }
+
+                formStatusMessage.textContent = 'Sending message...';
+                formStatusMessage.className = 'mt-3 text-secondary'; // Reset classes
+
+                try {
+                    const formData = new FormData(contactForm);
+                    const response = await fetch(contactForm.action, {
+                        method: contactForm.method,
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        formStatusMessage.textContent = 'Message sent successfully! Thank you.';
+                        formStatusMessage.classList.add('text-success');
+                        contactForm.reset(); // Clear the form
+                        contactForm.classList.remove('was-validated'); // Remove validation styles
+                    } else {
+                        const data = await response.json();
+                        formStatusMessage.textContent = data.errors ? data.errors.map(e => e.message).join(', ') : 'An error occurred while sending your message. Please try again.';
+                        formStatusMessage.classList.add('text-danger');
+                    }
+                } catch (error) {
+                    formStatusMessage.textContent = 'Network error. Please check your connection and try again.';
+                    formStatusMessage.classList.add('text-danger');
+                    console.error('Form submission error:', error);
+                }
+                contactForm.classList.add('was-validated');
+            });
+        });
+    </script>
+</body>
+</html>
